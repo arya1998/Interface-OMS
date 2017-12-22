@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Laporan Keuangan bulan November 2017 | OMS</title>
+    <title>Tambah SPJ | OMS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -66,49 +66,29 @@
     <header class="masthead" style="background-image: url(https://static.pexels.com/photos/81363/office-work-desk-computer-81363.jpeg)">
         <div class="intro-body">
             <div class="container">
-                <h1 class="display-2 text-dark" style="margin-left: -76.5%;">PESAN</h1>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="margin-left: -83.8%;">Compose New Mail</button>
-                <div class="modal fade text-dark" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Compose New Mail</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Recipient">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Say something"></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <br>
-                <div class="bg-dark" style="text-align: left; padding-left: 3%">
+                <div class="bg-dark" style="text-align: center; padding-left: 3%">
                     <br>
-                    <h2>Laporan Keuangan Bulan November 2017</h2>
-                    <cite title="Source Title">Julian Enggario P</cite>
-                    <br><br>
-                    <p>
-                        Selamat malam pak,<br>
-                        laporan keuangan bulan November 2017 yang bapak minta sudah saya kirim ke meja bapak. Terima kasih.<br>
-                        -JULIAN ENGGARIO P
-                    </p>
+                    <h3>Tambah SPJ</h3>
                     <br>
+                    <form action="detailspj.html" method="POST">
+                        <br>
+                        ID<br><input type="text" name="ID" disabled="disabled" placeholder="QQ02"><br>
+                        Jenis<br><input type="text" name="ID" placeholder="Jenis"><br>
+                        Jumlah<br><input type="text" name="ID" placeholder="Jumlah"><br>
+                        Nominal<br><input type="text" name="ID" placeholder="Nominal"><br>
+                        ID Karyawan<br><input type="text" name="ID" placeholder="ID Karyawan"><br>
+                        Tanggal Transaksi<br><input type="text" name="ID" placeholder="Tanggal Transaksi"><br>
+                        Tanggal Usulan<br><input type="text" name="ID" placeholder="Tanggal Usulan"><br>
+                        <br><br>Scan Nota<br><input type="file" name="pic" accept="image/*"><br>
+                        <input type="submit" name="submit" class="btn btn-success" onclick="notif()" value="Simpan">
+                        <br><br>
+                        <script>
+                            function notif() {
+                                alert("Usulan berhasil disimpan")
+                            }
+                        </script>
+                    </form>
                 </div>
             </div>
         </div>

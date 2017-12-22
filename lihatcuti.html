@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pesan | OMS</title>
+    <title>Lihat Daftar Cuti | OMS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -66,8 +66,9 @@
     <header class="masthead" style="background-image: url(https://static.pexels.com/photos/81363/office-work-desk-computer-81363.jpeg)">
       <div class="intro-body">
         <div class="container">
-            <h1 class="display-2 text-dark" style="margin-left: -76.5%;">PESAN</h1>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="margin-left: -83.8%;">Compose New Mail</button>
+            <h1 class="display-2 text-dark" style="margin-left: -35.5%;">DAFTAR CUTI</h1>
+            <a href="tambahcuti.html" type="button" class="btn btn-success" style="margin-left: -83.8%;">Tambah Cuti</a>
+            <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="margin-left: -83.8%;">Compose New Mail</button>
             <div class="modal fade text-dark" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -96,40 +97,43 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <br>
             <table class="table table-dark table-sm table-hover">
                 <tbody>
+                    <thead>
+                        <td>ID</td>
+                        <td>Tanggal Mulai</td>
+                        <td>Tanggal Selesai</td>
+                        <td>Alasan</td>
+                        <td>Nama Karyawan</td>
+                        <td>Pilihan</td>
+                    </thead>
                     <tr>
-                        <th scope="row">25</th>
+                        <td>C07</td>
+                        <td>20-12-2017</td>
+                        <td>27-12-2017</td>
+                        <td>Pulang Kampung</td>
                         <td>Firman Aqil</td>
-                        <td><strong>Resignation Letter</strong></td>
-                        <td>19 Des 2017</td>
+                        <td><a href="detailcuti.html">Tanggapi</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">24</th>
-                        <td>Ichsan Sandi D</td>
-                        <td><strong>re: Pengajuan Magang</strong></td>
-                        <td>16 Des 2017</td>
+                        <td>C1F</td>
+                        <td>23-12-2017</td>
+                        <td>26-12-2017</td>
+                        <td>Pulang Kampung</td>
+                        <td>Julian Enggarrio</td>
+                        <td><a href="detailcuti.html">Tanggapi</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">23</th>
-                        <td>Firman Aqil</td>
-                        <td><strong>Kejelasan Upah Gaji</strong></td>
-                        <td>5 Des 2017</td>
+                        <td>C30</td>
+                        <td>02-01-2018</td>
+                        <td>29-01-2018</td>
+                        <td>Studi Banding</td>
+                        <td>Julian Enggarrio</td>
+                        <td><a href="detailcuti.html">Tanggapi</a></td>
                     </tr>
-                    <tr class="clickable-row" data-href="read_pesan.html">
-                        <th scope="row">22</th>
-                        <td>Julian Enggario P</td>
-                        <td><strong>Laporan Keuangan Bulan November 2017</strong></td>
-                        <td>30 Nov 2017</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">21</th>
-                        <td>Ichsan Sandi D</td>
-                        <td><strong>Pengajuan Magang</strong></td>
-                        <td>29 Nov 2017</td>
-                    </tr>
+                    
                 </tbody>
             </table>
             <nav aria-label="Page navigation example">
